@@ -1,9 +1,9 @@
 import { Clock, TrendingDown, Users } from 'lucide-react';
 
 const problems = [
-  { icon: Clock, index: '01', title: 'The day moves faster than the board', body: 'Every delay ripples manually. One reset eats 20 minutes and nobody updates the board until lunch is already late.' },
-  { icon: TrendingDown, index: '02', title: 'Overtime appears after it is too late', body: 'By the time the UPM sees the numbers, the crew is already in golden time. The damage is done before the report lands.' },
-  { icon: Users, index: '03', title: 'Everyone has a different version of today', body: 'The call sheet was right at 6am. By 9am it is fiction. Every department is working from a different version of the day.' },
+  { icon: Clock, index: '01', title: 'The truck runs late and nobody hears about it', body: 'Every delay gets guessed at. By the time you call dispatch for an update, your whole afternoon is already gone.' },
+  { icon: TrendingDown, index: '02', title: 'Boxes go missing between pickup and drop-off', body: 'No scan, no record — items get lost in the shuffle and nobody notices until you\'re unpacking weeks later.' },
+  { icon: Users, index: '03', title: 'Every crew member gives you a different ETA', body: 'Dispatch says one thing, the driver says another, and you\'re stuck rearranging your day around a guess.' },
 ];
 
 export default function Problem() {
@@ -13,10 +13,10 @@ export default function Problem() {
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
           <div className="reveal">
             <p className="eyebrow text-amber-400">The problem</p>
-            <h2 className="headline mt-6 max-w-md text-4xl text-cream-50 sm:text-6xl">A live day needs a live system.</h2>
+            <h2 className="headline mt-6 max-w-md text-4xl text-cream-50 sm:text-6xl">A moving day needs a live system.</h2>
           </div>
           <div>
-            <p className="reveal max-w-2xl text-xl leading-relaxed text-cream-200 sm:text-2xl">Running a film set is a scheduling problem with a hundred moving parts. The tools built for it were built for offices, not for the chaos of a 5am call.</p>
+            <p className="reveal max-w-2xl text-xl leading-relaxed text-cream-200 sm:text-2xl">Moving is a logistics problem with a hundred moving parts — literally. The tools built for it were built for spreadsheets, not for a truck stuck in traffic.</p>
             <div className="mt-14 grid gap-0 border-t border-white/20 md:grid-cols-3">
               {problems.map((problem, i) => (
                 <article key={problem.index} className={`reveal reveal-delay-${i + 1} border-b border-white/20 py-7 md:border-b-0 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 md:last:pr-0`}>

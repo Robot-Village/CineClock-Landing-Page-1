@@ -1,21 +1,21 @@
 const testimonials = [
   {
     quote:
-      "I used to spend the first ten minutes of every break reworking the board by hand. Now Reel does it the second I log the actual. It's the first tool that actually fits how an AD thinks.",
-    name: 'Maya Okafor',
-    role: '1st AD · Commercial work',
+      "I used to spend the morning of my move just waiting by the window, wondering when the truck would show up. With Haul I watched them move stop to stop and knew exactly when to expect them.",
+    name: 'Sarah Kim',
+    role: 'Homeowner · Local move',
   },
   {
     quote:
-      'The overtime alert paid for the year on day one. We caught a two-hour creep before lunch and restructured the afternoon. That alone saved the production four figures.',
-    name: 'Daniel Reyes',
-    role: 'UPM · Independent features',
+      'The digital inventory saved us. We had a full photo record of every box before it left the old office, so when something looked off at the new space we could check immediately.',
+    name: 'James Whitfield',
+    role: 'Facilities Manager · Office relocation',
   },
   {
     quote:
-      'Living call sheets changed my life. Every department looking at the same numbers, updating in real time. No more "which version is current?" texts.',
-    name: 'Priya Nair',
-    role: 'Line Producer · Streaming series',
+      'Cross-country move with two kids and a dog. The updates on the road made the whole week easier — we always knew where the truck was.',
+    name: 'Elena Martins',
+    role: 'Homeowner · Long-distance move',
   },
 ];
 
@@ -24,10 +24,10 @@ export default function Testimonials() {
     <section className="bg-amber-50 py-24 sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="reveal max-w-2xl">
-          <p className="eyebrow text-ink-500">From the set</p>
+          <p className="eyebrow text-ink-500">From the road</p>
           <h2 className="headline mt-5 text-4xl text-ink-950 sm:text-6xl">
             The people who<br />
-            <span className="font-serif font-normal italic normal-case">own the clock.</span>
+            <span className="font-serif font-normal italic normal-case">trust the truck.</span>
           </h2>
         </div>
 
@@ -38,7 +38,7 @@ export default function Testimonials() {
               className={`reveal reveal-delay-${i + 1} flex flex-col border border-ink-950/20 bg-cream-50 p-7 sm:p-8`}
             >
               <blockquote className="flex-1 font-serif text-lg leading-relaxed text-ink-800 text-pretty">
-                "{t.quote}"
+                &quot;{t.quote}&quot;
               </blockquote>
               <figcaption className="mt-8 flex items-center gap-3 border-t border-ink-950/10 pt-5">
                 <span className="grid h-10 w-10 place-items-center rounded-full bg-ink-950 font-mono text-xs font-medium text-cream-50">

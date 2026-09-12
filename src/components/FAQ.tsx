@@ -5,28 +5,28 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'Is this ready to use right now?',
-    a: "This is a demo landing page. The full app — with project setup, the live cascade engine, and account logins — is in active development. Sign up for the free tier and we'll let you know the moment it's live.",
+    q: 'Is this a real moving company I can book right now?',
+    a: "This is a demo landing page for Haul. Live booking, real crews, and real pricing are in active development. Sign up and we'll let you know the moment it's live in your area.",
   },
   {
-    q: "What's the difference between Pro and the Production Pass?",
-    a: 'Pro is a monthly subscription for an individual AD or freelance producer working across multiple gigs. The Production Pass is a one-time flat fee that covers a single multi-week project — ideal when a production company is paying for the tool, not the person.',
+    q: "What's the difference between Full-Service and White Glove?",
+    a: 'Full-Service covers local moves, with our crew handling loading, transport, and unloading. White Glove Relocation is built for long-distance moves and includes full packing, unpacking, and up to 30 days of storage.',
   },
   {
-    q: 'Does it work offline on set?',
-    a: 'Yes. The app is offline-first, designed for soundstages, basements, and remote locations with no signal. Everything syncs automatically the moment you reconnect.',
+    q: 'Do you provide packing materials?',
+    a: 'Yes — boxes, tape, and wrap are included on Full-Service and White Glove bookings. DIY labor-only bookings can add materials for a flat fee.',
   },
   {
-    q: 'Can my whole department see the same day?',
-    a: 'On Pro and Production Pass, yes. You can share a live view of the day with your 2nd AD, the UPM, and key departments — everyone sees the same numbers updating in real time.',
+    q: 'Is my stuff insured during the move?',
+    a: 'Every booking includes basic liability coverage. Full-Service and White Glove bookings include full-value protection, and you can add extra coverage at checkout.',
   },
   {
-    q: 'Will you add subscriptions and payments?',
-    a: "Yes — billing for Pro and Production Pass is coming soon. During this demo period, everything is free and no credit card is required.",
+    q: 'Do you handle long-distance and out-of-state moves?',
+    a: 'Yes. White Glove Relocation is built for long-distance and interstate moves, with a dedicated coordinator managing the whole trip door to door.',
   },
   {
-    q: 'Who is Reel built for?',
-    a: '1st and 2nd ADs, Unit Production Managers, line producers, and independent production companies. If you own the schedule and the clock, Reel is for you.',
+    q: 'Who is Haul built for?',
+    a: 'Anyone moving a home or an office — from a studio apartment across town to a five-bedroom house across the country.',
   },
 ];
 

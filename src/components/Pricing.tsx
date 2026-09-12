@@ -2,52 +2,52 @@ import { Check, ArrowRight } from 'lucide-react';
 
 const tiers = [
   {
-    name: 'Free',
-    tagline: 'For your first shoot day',
-    price: '$0',
-    cadence: 'forever',
-    cta: 'Start free',
+    name: 'DIY Move',
+    tagline: 'Labor only, you drive',
+    price: '$89',
+    cadence: 'per hour, 2 movers',
+    cta: 'Book labor',
     href: '#top',
     features: [
-      '1 project',
-      '1 shoot day',
-      'Dynamic cascade scheduling',
-      'Living call sheets',
-      'Offline-first mobile app',
+      '2-hour minimum',
+      'Loading & unloading',
+      'Furniture wrapping',
+      'Basic liability coverage',
+      'Same-week booking',
     ],
     highlight: false,
   },
   {
-    name: 'Pro',
-    tagline: 'For freelance ADs & producers',
-    price: '$29',
-    cadence: 'per month',
-    cta: 'Go Pro',
+    name: 'Full-Service Move',
+    tagline: 'Local moves, done for you',
+    price: '$149',
+    cadence: 'per hour, 3 movers',
+    cta: 'Get a quote',
     href: '#top',
     features: [
-      'Unlimited projects',
-      'Unlimited shoot days',
-      'End-of-day reports',
-      'Setup & shot templates',
-      'Live overtime alerts',
-      'Crew & department sharing',
+      'Everything in DIY',
+      'Packing materials included',
+      'Digital inventory & photos',
+      'Live route tracking',
+      'Move-day summary report',
+      'Flat-rate option available',
     ],
     highlight: true,
   },
   {
-    name: 'Production Pass',
-    tagline: 'Per feature film or commercial',
-    price: '$99',
-    cadence: 'flat, per project',
-    cta: 'Get a Pass',
+    name: 'White Glove Relocation',
+    tagline: 'Long-distance & full-pack',
+    price: '$2,499',
+    cadence: 'flat, per move',
+    cta: 'Request a quote',
     href: '#top',
     features: [
-      'One multi-week project',
-      'Unlimited shoot days',
-      'Everything in Pro',
-      'Multi-user department access',
-      'Variance & overtime reporting',
-      'Priority support',
+      'One multi-day relocation',
+      'Full pack & unpack service',
+      'Climate-controlled transport',
+      'Dedicated move coordinator',
+      'Storage included (30 days)',
+      'Priority scheduling',
     ],
     highlight: false,
   },
@@ -61,7 +61,7 @@ export default function Pricing() {
           <p className="eyebrow text-ink-500">Pricing</p>
           <h2 className="headline mt-5 text-4xl text-ink-950 sm:text-6xl">
             Priced for the way<br />
-            <span className="font-serif font-normal italic normal-case">film actually works.</span>
+            <span className="font-serif font-normal italic normal-case">moving actually works.</span>
           </h2>
         </div>
 
@@ -112,7 +112,7 @@ export default function Pricing() {
         </div>
 
         <p className="reveal reveal-delay-4 mt-8 text-xs text-ink-400">
-          Subscriptions and payments coming soon. This is a demo — no card required.
+          Quotes are estimates until confirmed on-site. This is a demo — no card required.
         </p>
       </div>
     </section>

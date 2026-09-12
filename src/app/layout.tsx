@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Reel — Timekeeper for Film Sets',
+  title: 'Haul — Moving, Tracked Live',
   description:
-    'Reel automates set timeline management for 1st ADs, UPMs, and line producers. Dynamically cascade shot delays across the day to prevent costly overtime.',
+    'Haul brings live route tracking, digital inventory, and guaranteed flat pricing to residential and commercial moves. Know exactly when your crew will arrive — every time.',
   openGraph: {
     images: ['https://bolt.new/static/og_default.png'],
   },

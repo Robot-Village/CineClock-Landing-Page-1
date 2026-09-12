@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const links = [
-  { label: 'Features', href: '#features' },
+  { label: 'Services', href: '#features' },
   { label: 'How it works', href: '#how-it-works' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
@@ -33,10 +33,10 @@ export default function Nav() {
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a href="#top" className="group flex items-center gap-2">
           <span className="text-lg font-extrabold tracking-tight text-ink-950 transition-opacity group-hover:opacity-70">
-            REEL
+            HAUL
           </span>
           <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-ink-500 sm:inline">
-            Timekeeper
+            Moving Co.
           </span>
         </a>
 
@@ -57,13 +57,13 @@ export default function Nav() {
             href={process.env.NEXT_PUBLIC_APP_URL || '#'}
             className="text-sm font-medium text-ink-600 transition-colors hover:text-ink-950"
           >
-            Sign in
+            Track your move
           </a>
           <a
             href="#pricing"
             className="rounded-full bg-ink-950 px-5 py-2 text-sm font-semibold text-cream-50 transition-all duration-300 hover:bg-ink-700"
           >
-            Start free
+            Get a quote
           </a>
         </div>
 
@@ -94,7 +94,7 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-ink-950 px-4 py-2 text-center text-sm font-semibold text-cream-50"
             >
-              Start free
+              Get a quote
             </a>
           </div>
         </div>
