@@ -60,7 +60,7 @@ export default function Nav() {
             Track your move
           </a>
           <a
-            href="#pricing"
+            href="https://tally.so/r/QKbKaY"
             className="rounded-full bg-ink-950 px-5 py-2 text-sm font-semibold text-cream-50 transition-all duration-300 hover:bg-ink-700"
           >
             Get a quote
@@ -90,7 +90,7 @@ export default function Nav() {
               </a>
             ))}
             <a
-              href="#pricing"
+              href="https://tally.so/r/QKbKaY"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-ink-950 px-4 py-2 text-center text-sm font-semibold text-cream-50"
             >

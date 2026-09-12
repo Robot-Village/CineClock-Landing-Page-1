@@ -17,7 +17,7 @@ export default function Hero() {
             </p>
             <div className="reveal reveal-delay-3 mt-9 flex flex-wrap items-center gap-4">
               <a
-                href="#pricing"
+                href="https://tally.so/r/QKbKaY"
                 className="group inline-flex items-center gap-3 rounded-full bg-ink-950 px-6 py-3.5 text-sm font-semibold text-cream-50 transition-all duration-300 hover:bg-ink-700"
               >
                 Get your free quote

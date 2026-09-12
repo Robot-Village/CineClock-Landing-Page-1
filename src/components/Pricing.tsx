@@ -7,7 +7,7 @@ const tiers = [
     price: '$89',
     cadence: 'per hour, 2 movers',
     cta: 'Book labor',
-    href: '#top',
+    href: 'https://tally.so/r/QKbKaY',
     features: [
       '2-hour minimum',
       'Loading & unloading',
@@ -23,7 +23,7 @@ const tiers = [
     price: '$149',
     cadence: 'per hour, 3 movers',
     cta: 'Get a quote',
-    href: '#top',
+    href: 'https://tally.so/r/QKbKaY',
     features: [
       'Everything in DIY',
       'Packing materials included',
@@ -40,7 +40,7 @@ const tiers = [
     price: '$2,499',
     cadence: 'flat, per move',
     cta: 'Request a quote',
-    href: '#top',
+    href: 'https://tally.so/r/QKbKaY',
     features: [
       'One multi-day relocation',
       'Full pack & unpack service',

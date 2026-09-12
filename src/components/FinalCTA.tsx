@@ -30,7 +30,7 @@ export default function FinalCTA() {
             </p>
 
             <a
-              href="#pricing"
+              href="https://tally.so/r/QKbKaY"
               className="group mt-10 inline-flex w-fit items-center gap-3 rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-ink-950 transition-colors duration-300 hover:bg-amber-300"
             >
               Get your free moving quote
