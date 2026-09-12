@@ -36,7 +36,7 @@ export default function Nav() {
             HAUL
           </span>
           <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-ink-500 sm:inline">
-            Moving Co.
+            Furniture &amp; Appliance Delivery
           </span>
         </a>
 
@@ -54,10 +54,10 @@ export default function Nav() {
 
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href={process.env.NEXT_PUBLIC_APP_URL || '#'}
+            href="tel:+13027533672"
             className="text-sm font-medium text-ink-600 transition-colors hover:text-ink-950"
           >
-            Track your move
+            (302) 753-3672
           </a>
           <a
             href="https://tally.so/r/QKbKaY"

@@ -1,56 +1,11 @@
-import { Check, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
-const tiers = [
-  {
-    name: 'DIY Move',
-    tagline: 'Labor only, you drive',
-    price: '$89',
-    cadence: 'per hour, 2 movers',
-    cta: 'Book labor',
-    href: 'https://tally.so/r/QKbKaY',
-    features: [
-      '2-hour minimum',
-      'Loading & unloading',
-      'Furniture wrapping',
-      'Basic liability coverage',
-      'Same-week booking',
-    ],
-    highlight: false,
-  },
-  {
-    name: 'Full-Service Move',
-    tagline: 'Local moves, done for you',
-    price: '$149',
-    cadence: 'per hour, 3 movers',
-    cta: 'Get a quote',
-    href: 'https://tally.so/r/QKbKaY',
-    features: [
-      'Everything in DIY',
-      'Packing materials included',
-      'Digital inventory & photos',
-      'Live route tracking',
-      'Move-day summary report',
-      'Flat-rate option available',
-    ],
-    highlight: true,
-  },
-  {
-    name: 'White Glove Relocation',
-    tagline: 'Long-distance & full-pack',
-    price: '$2,499',
-    cadence: 'flat, per move',
-    cta: 'Request a quote',
-    href: 'https://tally.so/r/QKbKaY',
-    features: [
-      'One multi-day relocation',
-      'Full pack & unpack service',
-      'Climate-controlled transport',
-      'Dedicated move coordinator',
-      'Storage included (30 days)',
-      'Priority scheduling',
-    ],
-    highlight: false,
-  },
+const rates = [
+  { name: 'Local Delivery', price: '$60–$120', body: 'Marketplace & Craigslist pickups, furniture delivery, and store pickups.' },
+  { name: 'Appliances', price: '$70–$140', body: 'Washers, dryers, fridges — loaded, strapped, and delivered safely.' },
+  { name: 'Small Moves', price: '$80/hr', body: '2-hour minimum. Right-sized for a studio or one-bedroom apartment.' },
+  { name: 'Junk Removal', price: '$60–$150', body: 'Haul-away for old furniture and appliances you no longer need.' },
+  { name: 'Multi-Stop Routes', price: '+$20/stop', body: 'Add extra pickup or drop-off stops to a single run.' },
 ];
 
 export default function Pricing() {
@@ -58,61 +13,39 @@ export default function Pricing() {
     <section id="pricing" className="bg-cream-100 py-24 sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="reveal max-w-2xl">
-          <p className="eyebrow text-ink-500">Pricing</p>
+          <p className="eyebrow text-ink-500">Standard rates &amp; capacity</p>
           <h2 className="headline mt-5 text-4xl text-ink-950 sm:text-6xl">
-            Priced for the way<br />
-            <span className="font-serif font-normal italic normal-case">moving actually works.</span>
+            Simple pricing,<br />
+            <span className="font-serif font-normal italic normal-case">no surprises.</span>
           </h2>
         </div>
 
-        <div className="mt-16 grid items-stretch gap-5 lg:grid-cols-3">
-          {tiers.map((t, i) => (
-            <div
-              key={t.name}
-              className={[
-                `reveal reveal-delay-${i + 1} relative flex flex-col p-7 sm:p-8`,
-                t.highlight ? 'border border-ink-950 bg-ink-950 text-cream-50' : 'border border-ink-950/25 bg-cream-50 text-ink-950',
-              ].join(' ')}
-            >
-              <div className="flex items-baseline justify-between">
-                <h3 className="text-lg font-semibold">{t.name}</h3>
-                <span className={`font-mono text-[10px] uppercase tracking-widest ${t.highlight ? 'text-cream-500' : 'text-ink-400'}`}>
-                  {t.tagline}
-                </span>
-              </div>
-
-              <div className="mt-8 flex items-baseline gap-1.5">
-                <span className="text-5xl font-extrabold tracking-tight">{t.price}</span>
-                <span className={`text-sm ${t.highlight ? 'text-cream-400' : 'text-ink-500'}`}>/ {t.cadence}</span>
-              </div>
-
-              <a
-                href={t.href}
-                className={[
-                  'group mt-7 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-all duration-300',
-                  t.highlight
-                    ? 'bg-amber-400 text-ink-950 hover:bg-amber-300'
-                    : 'border border-ink-950/20 text-ink-950 hover:bg-ink-950 hover:text-cream-50',
-                ].join(' ')}
-              >
-                {t.cta}
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
-              </a>
-
-              <ul className={`mt-8 space-y-3 border-t pt-6 ${t.highlight ? 'border-white/15' : 'border-ink-950/10'}`}>
-                {t.features.map((f) => (
-                  <li key={f} className={`flex items-start gap-3 text-sm ${t.highlight ? 'text-cream-200' : 'text-ink-600'}`}>
-                    <Check className={`mt-0.5 h-4 w-4 shrink-0 ${t.highlight ? 'text-amber-400' : 'text-sage-500'}`} />
-                    {f}
-                  </li>
-                ))}
-              </ul>
+        <div className="mt-16 grid gap-px overflow-hidden border border-ink-950/15 bg-ink-950/15 sm:grid-cols-2 lg:grid-cols-5">
+          {rates.map((r) => (
+            <div key={r.name} className="flex flex-col bg-cream-50 p-6 sm:p-7">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-ink-400">{r.name}</span>
+              <span className="mt-4 text-3xl font-extrabold tracking-tight text-ink-950">{r.price}</span>
+              <p className="mt-4 text-sm leading-relaxed text-ink-600">{r.body}</p>
             </div>
           ))}
         </div>
 
+        <div className="mt-10 flex flex-col items-start justify-between gap-6 border border-ink-950 bg-ink-950 p-7 text-cream-50 sm:flex-row sm:items-center sm:p-8">
+          <div>
+            <p className="text-lg font-semibold">Get an instant, upfront quote</p>
+            <p className="mt-1 text-sm text-cream-300">Fill out the form with your item details and addresses — pricing depends on size, distance, and access.</p>
+          </div>
+          <a
+            href="https://tally.so/r/QKbKaY"
+            className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-ink-950 transition-all duration-300 hover:bg-amber-300"
+          >
+            Get a quote
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+          </a>
+        </div>
+
         <p className="reveal reveal-delay-4 mt-8 text-xs text-ink-400">
-          Quotes are estimates until confirmed on-site. This is a demo — no card required.
+          Rates reflect standard local delivery and capacity. Text or call (302) 753-3672 for same-day availability.
         </p>
       </div>
     </section>

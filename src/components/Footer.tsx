@@ -21,10 +21,10 @@ export default function Footer() {
           <div>
             <a href="#top" className="flex items-center gap-2.5">
               <span className="text-xl font-extrabold tracking-tight text-ink-950">HAUL</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-ink-500">Moving Co.</span>
+              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-ink-500">Furniture &amp; Appliance Delivery</span>
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-600">
-              The moving crew that treats your move like a job to nail. Built for people who don't want to guess when the truck shows up.
+              Local and reliable furniture &amp; appliance delivery serving Wilmington, DE and surrounding areas. Text or call (302) 753-3672.
             </p>
           </div>
 
@@ -45,8 +45,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-ink-950/10 pt-8 sm:flex-row">
-          <p className="text-xs text-ink-500">© {new Date().getFullYear()} Haul Moving Co. Demo build.</p>
-          <p className="text-xs text-ink-500">Made for the driveway, not the spreadsheet.</p>
+          <p className="text-xs text-ink-500">© {new Date().getFullYear()} Haul. Serving Wilmington, DE &amp; surrounding areas.</p>
+          <p className="text-xs text-ink-500">Delaware only. Local and reliable.</p>
         </div>
       </div>
     </footer>

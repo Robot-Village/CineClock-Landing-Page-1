@@ -6,14 +6,14 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid items-end gap-12 pb-16 lg:grid-cols-[1.15fr_0.85fr] lg:pb-24">
           <div>
-            <p className="reveal eyebrow mb-7 text-ink-500">Full-service moving, done right</p>
+            <p className="reveal eyebrow mb-7 text-ink-500">Local &amp; reliable · Delaware only</p>
             <h1 className="reveal reveal-delay-1 headline max-w-5xl text-[clamp(3.25rem,9vw,8rem)] text-ink-950">
-              Stop dreading the day.
+              Furniture &amp; appliance
               <br />
-              <span className="font-serif font-normal italic normal-case">Start owning it.</span>
+              <span className="font-serif font-normal italic normal-case">delivered right.</span>
             </h1>
             <p className="reveal reveal-delay-2 mt-8 max-w-lg text-lg leading-relaxed text-ink-600 sm:text-xl">
-              Haul is the moving crew that treats your move like a job to nail. Live route tracking, a digital inventory of every box, and a crew that shows up when we say we will.
+              Professional, fast, and affordable delivery for Marketplace finds, store pickups, appliances, and small moves. RAM ProMaster 2500 with a 12 ft loading ramp, serving Wilmington, DE and surrounding areas.
             </p>
             <div className="reveal reveal-delay-3 mt-9 flex flex-wrap items-center gap-4">
               <a
@@ -35,8 +35,8 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-[2rem] bg-ink-950 p-4 shadow-2xl shadow-ink-950/20 sm:p-6">
               <div className="flex items-center justify-between border-b border-white/15 pb-4">
                 <div>
-                  <p className="font-mono text-[10px] uppercase tracking-widest text-cream-300">Job #482 / Oak Street</p>
-                  <p className="mt-1 text-sm font-medium text-cream-50">Today's route</p>
+                  <p className="font-mono text-[10px] uppercase tracking-widest text-cream-300">Job #482 / Wilmington, DE</p>
+                  <p className="mt-1 text-sm font-medium text-cream-50">Today's delivery</p>
                 </div>
                 <span className="flex items-center gap-2 rounded-full bg-amber-400 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-ink-950">
                   <span className="blink-rec h-1.5 w-1.5 rounded-full bg-ink-950" /> Live
@@ -44,11 +44,11 @@ export default function Hero() {
               </div>
               <div className="space-y-2 py-5">
                 {[
-                  ['1', 'Load pickup', '08:00', 'done'],
-                  ['2', 'Wrap loading', '08:45', 'done'],
-                  ['3', 'En route to drop-off', '09:15', 'done'],
-                  ['3B', 'Arriving at destination', '09:50', 'live'],
-                  ['4', 'Unload & placement', '10:20', 'next'],
+                  ['1', 'Pickup confirmed', '08:00', 'done'],
+                  ['2', 'Secure tie-down', '08:20', 'done'],
+                  ['3', 'En route to delivery', '08:45', 'done'],
+                  ['3B', 'Arriving at address', '09:15', 'live'],
+                  ['4', 'Delivery & placement', '09:35', 'next'],
                 ].map(([stop, label, time, status]) => (
                   <div key={stop} className={`flex items-center gap-3 rounded-xl px-3 py-3 ${status === 'live' ? 'bg-amber-400 text-ink-950' : 'text-cream-200'}`}>
                     <span className={`font-mono text-[10px] ${status === 'live' ? 'text-ink-700' : 'text-cream-500'}`}>{stop}</span>
@@ -61,10 +61,10 @@ export default function Hero() {
               </div>
               <div className="border-t border-white/15 pt-4">
                 <div className="flex items-center justify-between text-[10px] uppercase tracking-widest text-cream-400">
-                  <span>Job progress</span><span className="font-mono text-cream-200">62%</span>
+                  <span>Delivery progress</span><span className="font-mono text-cream-200">75%</span>
                 </div>
                 <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/15">
-                  <div className="h-full w-[62%] rounded-full bg-amber-400" />
+                  <div className="h-full w-[75%] rounded-full bg-amber-400" />
                 </div>
               </div>
             </div>
@@ -73,10 +73,10 @@ export default function Hero() {
       </div>
       <div className="border-y border-ink-950/10 bg-cream-100 py-5">
         <div className="mx-auto flex max-w-7xl items-center gap-8 overflow-hidden px-5 sm:px-8">
-          <span className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-500">Built for the people who move you forward</span>
+          <span className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-500">RAM ProMaster 2500 · 12 ft loading ramp</span>
           <span className="h-px w-16 shrink-0 bg-ink-300" />
           <div className="marquee-track flex min-w-max gap-10 text-xs font-medium uppercase tracking-widest text-ink-400">
-            <span>Local Moves</span><span>Long-Distance</span><span>Office Relocations</span><span>Packing &amp; Storage</span><span>Local Moves</span><span>Long-Distance</span><span>Office Relocations</span><span>Packing &amp; Storage</span>
+            <span>Marketplace Pickups</span><span>Furniture Delivery</span><span>Appliance Transport</span><span>Store Pickups</span><span>Junk Removal</span><span>Marketplace Pickups</span><span>Furniture Delivery</span><span>Appliance Transport</span><span>Store Pickups</span><span>Junk Removal</span>
           </div>
         </div>
       </div>

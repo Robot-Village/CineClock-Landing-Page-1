@@ -1,9 +1,9 @@
 import { Clock, TrendingDown, Users } from 'lucide-react';
 
 const problems = [
-  { icon: Clock, index: '01', title: 'The truck runs late and nobody hears about it', body: 'Every delay gets guessed at. By the time you call dispatch for an update, your whole afternoon is already gone.' },
-  { icon: TrendingDown, index: '02', title: 'Boxes go missing between pickup and drop-off', body: 'No scan, no record — items get lost in the shuffle and nobody notices until you\'re unpacking weeks later.' },
-  { icon: Users, index: '03', title: 'Every crew member gives you a different ETA', body: 'Dispatch says one thing, the driver says another, and you\'re stuck rearranging your day around a guess.' },
+  { icon: Clock, index: '01', title: "The seller can't hold your item", body: "You found the perfect couch on Marketplace, but you don't have a truck — and the seller needs it gone today." },
+  { icon: TrendingDown, index: '02', title: 'Big-box delivery windows are all day', body: "Home Depot and Lowe's delivery windows swallow your whole schedule, and appliances still need someone to actually load and secure them." },
+  { icon: Users, index: '03', title: 'Small moves fall through the cracks', body: 'Full-size moving companies are overkill — and overpriced — for a studio apartment or a few pieces of furniture.' },
 ];
 
 export default function Problem() {
@@ -13,10 +13,10 @@ export default function Problem() {
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
           <div className="reveal">
             <p className="eyebrow text-amber-400">The problem</p>
-            <h2 className="headline mt-6 max-w-md text-4xl text-cream-50 sm:text-6xl">A moving day needs a live system.</h2>
+            <h2 className="headline mt-6 max-w-md text-4xl text-cream-50 sm:text-6xl">Getting it home is the hard part.</h2>
           </div>
           <div>
-            <p className="reveal max-w-2xl text-xl leading-relaxed text-cream-200 sm:text-2xl">Moving is a logistics problem with a hundred moving parts — literally. The tools built for it were built for spreadsheets, not for a truck stuck in traffic.</p>
+            <p className="reveal max-w-2xl text-xl leading-relaxed text-cream-200 sm:text-2xl">Furniture, appliances, and small moves need a truck, a ramp, and someone who knows how to tie things down — not a full moving crew and not a rideshare.</p>
             <div className="mt-14 grid gap-0 border-t border-white/20 md:grid-cols-3">
               {problems.map((problem, i) => (
                 <article key={problem.index} className={`reveal reveal-delay-${i + 1} border-b border-white/20 py-7 md:border-b-0 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 md:last:pr-0`}>

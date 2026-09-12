@@ -1,12 +1,12 @@
-import { BarChart3, Bell, FileText, Smartphone, Workflow, Zap } from 'lucide-react';
+import { Boxes, Home, PackageSearch, ShoppingCart, Trash2, Truck } from 'lucide-react';
 
 const features = [
-  { icon: Workflow, number: '01', title: 'Live route & ETA tracking', body: 'Watch your crew and truck move in real time. Know exactly when they will arrive — down to the minute, not the hour window.', tag: 'Core' },
-  { icon: Bell, number: '02', title: 'Arrival window alerts', body: 'Get notified the moment the crew leaves the last stop, not after they are already outside your door.', tag: 'Core' },
-  { icon: FileText, number: '03', title: 'Digital inventory & photos', body: 'Every box and item scanned and photographed at pickup. Nothing goes unaccounted for between your old place and the new one.', tag: 'Core' },
-  { icon: BarChart3, number: '04', title: 'Move-day summary report', body: 'Time in, time out, inventory count, and a signed condition report — sent the moment the job wraps.', tag: 'Pro' },
-  { icon: Smartphone, number: '05', title: 'Built for the road', body: 'Offline-first crew app. Works in elevators, parking garages, and dead zones. Syncs the moment there is signal.', tag: 'Core' },
-  { icon: Zap, number: '06', title: 'Saved move templates', body: 'Save your floor plan and inventory list. Book your next move — or a return trip — in minutes.', tag: 'Pro' },
+  { icon: ShoppingCart, number: '01', title: 'Marketplace & Craigslist pickups', body: 'Found a great deal? We pick it up and bring it straight to your door, no truck rental required.', tag: 'Core' },
+  { icon: Home, number: '02', title: 'Furniture delivery', body: 'Sofas, tables, mattresses — handled with professional loading and secure tie-downs, every time.', tag: 'Core' },
+  { icon: Truck, number: '03', title: 'Appliance transport', body: 'Washers, dryers, fridges. Loaded, strapped, and delivered safely with our 12 ft ramp.', tag: 'Core' },
+  { icon: Boxes, number: '04', title: 'Small apartment moves', body: 'Studio or one-bedroom move? Skip the full moving crew — get a right-sized team and truck.', tag: 'Core' },
+  { icon: PackageSearch, number: '05', title: 'Store pickups', body: "Best Buy, Home Depot, Lowe's, lumber, tile & stone yards — we pick up what won't fit in your car.", tag: 'Core' },
+  { icon: Trash2, number: '06', title: 'Junk removal & multi-stop routes', body: 'Haul away old furniture and appliances, or add stops to one run for +$20 per stop.', tag: 'Pro' },
 ];
 
 export default function Features() {
@@ -14,8 +14,8 @@ export default function Features() {
     <section id="features" className="bg-cream-100 py-24 sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid items-end gap-8 lg:grid-cols-[0.7fr_1.3fr]">
-          <div className="reveal"><p className="eyebrow text-ink-500">The toolkit</p><h2 className="headline mt-5 text-4xl text-ink-950 sm:text-6xl">The system behind the move.</h2></div>
-          <p className="reveal max-w-xl text-lg leading-relaxed text-ink-600 sm:justify-self-end sm:text-xl">Less guessing. Better ETAs. More control when traffic decides to ruin your afternoon.</p>
+          <div className="reveal"><p className="eyebrow text-ink-500">Services offered</p><h2 className="headline mt-5 text-4xl text-ink-950 sm:text-6xl">Everything that needs a truck.</h2></div>
+          <p className="reveal max-w-xl text-lg leading-relaxed text-ink-600 sm:justify-self-end sm:text-xl">A clean, well-maintained RAM ProMaster with same-day availability and flexible day &amp; weekend scheduling.</p>
         </div>
         <div className="mt-16 grid gap-px overflow-hidden border border-ink-950/15 bg-ink-950/15 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (

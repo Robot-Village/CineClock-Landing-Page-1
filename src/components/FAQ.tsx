@@ -5,28 +5,32 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'Is this a real moving company I can book right now?',
-    a: "This is a demo landing page for Haul. Live booking, real crews, and real pricing are in active development. Sign up and we'll let you know the moment it's live in your area.",
+    q: 'What areas do you serve?',
+    a: 'We serve Wilmington, DE and the surrounding areas. Delaware only, local and reliable.',
   },
   {
-    q: "What's the difference between Full-Service and White Glove?",
-    a: 'Full-Service covers local moves, with our crew handling loading, transport, and unloading. White Glove Relocation is built for long-distance moves and includes full packing, unpacking, and up to 30 days of storage.',
+    q: 'What can you pick up or deliver?',
+    a: 'Marketplace and Craigslist finds, furniture (sofas, tables, mattresses), appliances (washers, dryers, fridges), small apartment moves, and store pickups from Best Buy, Home Depot, Lowe\'s, lumber yards, and tile & stone yards. We also handle junk removal and haul-away.',
   },
   {
-    q: 'Do you provide packing materials?',
-    a: 'Yes — boxes, tape, and wrap are included on Full-Service and White Glove bookings. DIY labor-only bookings can add materials for a flat fee.',
+    q: 'How much does it cost?',
+    a: 'Local delivery runs $60–$120, appliances $70–$140, small moves $80/hr with a 2-hour minimum, and junk removal $60–$150. Multi-stop routes add $20 per stop. Fill out the online form for an instant, upfront quote.',
   },
   {
-    q: 'Is my stuff insured during the move?',
-    a: 'Every booking includes basic liability coverage. Full-Service and White Glove bookings include full-value protection, and you can add extra coverage at checkout.',
+    q: 'How do I book?',
+    a: 'Fill out our quick online form with your item details and addresses, receive an instant upfront quote, pick a time slot, and we handle the rest — smooth local delivery and safe transport.',
   },
   {
-    q: 'Do you handle long-distance and out-of-state moves?',
-    a: 'Yes. White Glove Relocation is built for long-distance and interstate moves, with a dedicated coordinator managing the whole trip door to door.',
+    q: 'What kind of truck do you use?',
+    a: 'A clean, well-maintained RAM ProMaster 2500 — the same size as an Amazon delivery van — with a 12 ft loading ramp.',
   },
   {
-    q: 'Who is Haul built for?',
-    a: 'Anyone moving a home or an office — from a studio apartment across town to a five-bedroom house across the country.',
+    q: 'Do you offer same-day or weekend service?',
+    a: 'Yes. We offer fast response times, same-day availability when possible, and flexible day & weekend scheduling.',
+  },
+  {
+    q: "Can't find your slot online?",
+    a: 'Text or call us directly for a quote: (302) 753-3672.',
   },
 ];
 
